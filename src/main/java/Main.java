@@ -4,10 +4,11 @@ public class Main {
         Dog max = new Dog("max", 5, "Peng");
         Rabbit rabbit = new Rabbit("snowball", 3, "black");
         Toy robot = new Toy("curious George");
+        Toy car = new Toy("lego Truck");
 
         Action[] animals = new Action[]{coco, max, rabbit, robot};
         for (Action friend : animals) {
-            friend.play();
+            friend.play(car);
         }
     }
 }
